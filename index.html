@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .videos {
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .videos video {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border: 2px solid royalblue;
+        border-radius: 5px;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        border: 2px solid crimson;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+
+        margin: 50px 0;
+    }
+
+    .offer textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 3px;
+        height: 100px;
+        border: 2px solid cadetblue;
+        border-radius: 3px;
+    }
+
+    .offer button {
+        padding: 10px 20px;
+        background-color: navajowhite;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="videos">
+        <video autoplay id="my"></video>
+        <video autoplay id="other"></video>
+    </div>
+
+    <div class="offer">
+        <button id="createOffer">Create Offer</button>
+        <textarea type="text" id="offer"></textarea>
+        <button id="createAnswer">Create Answer</button>
+    </div>
+
+    <div class="offer">
+        <textarea type="text" id="answer"></textarea>
+        <button id="addAnswer">Add answer</button>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
